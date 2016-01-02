@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @*afto to pernei apo toBlogController sto ViewBag.Title*@
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css"
+          href="@Url.Content("~/Content/themes/simple/style.css")"/>
+    <script src="@Url.Content("~/Scripts/app.js")"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+    <div id="main">
+
+        <!-- Header -->
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <h1><a href="/">Hot<span class="logo_colour">News</span></a></h1>
+                    <h2>Book Reviews, News and more....</h2>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div id="menubar">
+                <ul id="menu">
+                    @*<a href="/Blog/Posts">Posts</a>*@
+                    <li>@Html.ActionLink("Posts", "Posts")</li>
+                    <li>@Html.ActionLink("Contact", "Contact")</li>
+                    <li>@Html.ActionLink("About Me", "About Me")</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Site Content -->
+        <div id="site_content">
+            @Html.Partial("_Search")
+            @RenderBody()
+
+            @* Call the child action to render the sidebar *@
+            @Html.Action("Sidebars")
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            Copyright  @DateTime.Now.Year HotNews All Rights Reserved
+        </div>
+    </div>
+</body>
+</html>
