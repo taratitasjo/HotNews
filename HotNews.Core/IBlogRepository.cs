@@ -25,5 +25,7 @@ namespace HotNews.Core
 
         Post Post(int year, int month, string titleSlug);
         IList<Category> Categories();
+
+        IList<Tag> Tags();
     }
 }

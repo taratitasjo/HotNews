@@ -30,6 +30,5 @@ C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Co
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Core\bin\Debug\Ninject.xml
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Core\bin\Debug\Ninject.Web.Common.xml
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Core\bin\Debug\Ninject.Web.Mvc.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Core\obj\Debug\HotNews.Core.csprojResolveAssemblyReference.cache
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Core\obj\Debug\HotNews.Core.dll
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Core\obj\Debug\HotNews.Core.pdb

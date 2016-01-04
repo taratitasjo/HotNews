@@ -148,5 +148,10 @@ namespace HotNews.Core
         {
             return _session.Query<Category>().OrderBy(p => p.Name).ToList();
         }
+
+        public IList<Tag> Tags()
+        {
+            return _session.Query<Tag>().OrderBy(p => p.Name).ToList();
+        }
     }
 }
