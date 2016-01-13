@@ -27,14 +27,38 @@ namespace HotNews
                     new { controller = "Blog", action = "Tag" }
                          );
 
-          
 
+            routes.MapRoute(
+                        "Login",
+                         "Login",
+                     new { controller = "Admin", action = "Login" }
+                        );
+
+            routes.MapRoute(
+                         "Logout",
+                         "Logout",
+                    new { controller = "Admin", action = "Logout" }
+                        );
+
+            routes.MapRoute(
+                        "Manage",
+                         "Manage",
+                     new { controller = "Admin", action = "Manage" }
+                        );
+
+            routes.MapRoute(
+                      "AdminAction",
+                      "Admin/{action}",
+                    new { controller = "Admin", action = "Login" }
+                         );
 
             routes.MapRoute(
                     "Action",
                     "{action}",
                     new { controller = "Blog", action = "Posts" }
                     );
+
+            
 
             //routes.MapRoute(
             //     "Default",

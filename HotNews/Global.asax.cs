@@ -2,6 +2,11 @@
 using Ninject;
 using Ninject.Web.Common;
 using System.Web.Routing;
+using HotNews.Providers;
+using System.Web.Mvc;
+using System.Web.Routing;
+using HotNews.Core.Objects;
+
 
 namespace HotNews
 {
@@ -13,6 +18,7 @@ namespace HotNews
 
             kernel.Load(new RepositoryModule());
             kernel.Bind<IBlogRepository>().To<BlogRepository>();
+            kernel.Bind<IAuthProvider>().To<AuthProvider>();
 
             return kernel;
         }
@@ -20,6 +26,7 @@ namespace HotNews
         protected override void OnApplicationStarted()
         {
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            ModelBinders.Binders.Add(typeof(Post), new PostModelBinder(Kernel));
             base.OnApplicationStarted();
         }
     }

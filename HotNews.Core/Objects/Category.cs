@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace HotNews.Core.Objects
 {
@@ -16,6 +17,7 @@ namespace HotNews.Core.Objects
         public virtual string Description
         { get; set; }
 
+        [JsonIgnore]
         public virtual IList<Post> Posts
         { get; set; }
     }

@@ -7,7 +7,7 @@ namespace HotNews.Core
     {
         IList<Post> Posts(int pageNo, int pageSize);
 
-        int TotalPosts();
+        int TotalPosts(bool checkIsPublished = true);
 
         IList<Post> PostsForCategory(string categorySlug, int pageNo, int pageSize);
 
@@ -27,5 +27,15 @@ namespace HotNews.Core
         IList<Category> Categories();
 
         IList<Tag> Tags();
+
+        IList<Post> Posts(int pageNo, int pageSize, string sortColumn,
+                            bool sortByAscending);
+
+        int AddPost(Post post);
+
+        Category Category(int id);
+
+        Tag Tag(int id);
+
     }
 }
