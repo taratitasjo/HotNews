@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>1.5</TypeScriptToolsVersion>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,6 +46,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FluentNHibernate, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
@@ -90,6 +95,7 @@
       <HintPath>..\packages\Ninject.MVC3.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -107,6 +113,10 @@
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -141,12 +151,18 @@
       <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Antlr3.Runtime.dll" />
     <Content Include="bin\FluentNHibernate.dll" />
     <Content Include="bin\HotNews.Core.dll" />
     <Content Include="bin\HotNews.Core.pdb" />
     <Content Include="bin\HotNews.dll" />
+    <Content Include="bin\HotNews.dll.config" />
     <Content Include="bin\HotNews.pdb" />
     <Content Include="bin\Iesi.Collections.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
@@ -163,17 +179,22 @@
     <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
     <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
     <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
     <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
     <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <Content Include="bin\System.Web.Helpers.dll" />
     <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
     <Content Include="bin\System.Web.Razor.dll" />
     <Content Include="bin\System.Web.Webpages.Deployment.dll" />
     <Content Include="bin\System.Web.Webpages.dll" />
     <Content Include="bin\System.Web.Webpages.Razor.dll" />
     <Content Include="bin\WebActivatorEx.dll" />
+    <Content Include="bin\WebGrease.dll" />
     <Content Include="Content\photo.jpg" />
     <Content Include="Content\themes\simple\admin.css" />
     <Content Include="Content\themes\simple\images\arrow.png" />
@@ -771,8 +792,6 @@
     <Content Include="Content\themes\simple\jqueryuicustom\js\jquery-ui-1.9.2.custom.min.js" />
     <Content Include="Content\themes\simple\style.css" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\admin.js" />
-    <Content Include="Scripts\app.js" />
     <Content Include="Content\themes\simple\jqueryuicustom\development-bundle\demos\autocomplete\search.php" />
     <Content Include="Content\themes\simple\jqueryuicustom\development-bundle\demos\tabs\ajax\content3-slow.php" />
     <Content Include="Content\themes\simple\jqueryuicustom\development-bundle\demos\tabs\ajax\content4-broken.php" />
@@ -812,15 +831,18 @@
     <Content Include="Content\themes\simple\jqueryuicustom\development-bundle\ui.tabs.jquery.json" />
     <Content Include="Content\themes\simple\jqueryuicustom\development-bundle\ui.tooltip.jquery.json" />
     <Content Include="Content\themes\simple\jqueryuicustom\development-bundle\ui.widget.jquery.json" />
-    <Content Include="Scripts\jqgrid\css\ui.jqgrid-bootstrap-ui.css" />
-    <Content Include="Scripts\jqgrid\css\ui.jqgrid-bootstrap.css" />
+    <Content Include="Scripts\admin.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\jqgrid\css\ellipsis-xbl.xml" />
     <Content Include="Scripts\jqgrid\css\ui.jqgrid.css" />
     <Content Include="Scripts\jqgrid\js\Changes.txt" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-ar.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-bg.js" />
-    <Content Include="Scripts\jqgrid\js\i18n\grid.locale-ca.js" />
+    <Content Include="Scripts\jqgrid\js\i18n\grid.locale-bg1251.js" />
+    <Content Include="Scripts\jqgrid\js\i18n\grid.locale-cat.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-cn.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-cs.js" />
+    <Content Include="Scripts\jqgrid\js\i18n\grid.locale-da.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-de.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-dk.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-el.js" />
@@ -832,6 +854,7 @@
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-gl.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-he.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-hr.js" />
+    <Content Include="Scripts\jqgrid\js\i18n\grid.locale-hr1250.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-hu.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-id.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-is.js" />
@@ -839,7 +862,7 @@
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-ja.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-kr.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-lt.js" />
-    <Content Include="Scripts\jqgrid\js\i18n\grid.locale-me.js" />
+    <Content Include="Scripts\jqgrid\js\i18n\grid.locale-mne.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-nl.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-no.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-pl.js" />
@@ -855,10 +878,10 @@
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-tr.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-tw.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-ua.js" />
-    <Content Include="Scripts\jqgrid\js\i18n\grid.locale-uk.js" />
     <Content Include="Scripts\jqgrid\js\i18n\grid.locale-vi.js" />
     <Content Include="Scripts\jqgrid\js\install.txt" />
-    <Content Include="Scripts\jqgrid\js\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\jqgrid\js\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jqgrid\js\jquery.jqGrid.js" />
     <Content Include="Scripts\jqgrid\js\jquery.jqGrid.min.js" />
     <Content Include="Scripts\jqgrid\plugins\grid.addons.js" />
     <Content Include="Scripts\jqgrid\plugins\grid.postext.js" />
@@ -869,28 +892,30 @@
     <Content Include="Scripts\jqgrid\plugins\searchFilter.css" />
     <Content Include="Scripts\jqgrid\plugins\ui.multiselect.css" />
     <Content Include="Scripts\jqgrid\plugins\ui.multiselect.js" />
-    <Content Include="Scripts\jqgrid\src\css\ui.jqgrid-bootstrap-ui.css" />
-    <Content Include="Scripts\jqgrid\src\css\ui.jqgrid-bootstrap.css" />
+    <Content Include="Scripts\jqgrid\src\css\ellipsis-xbl.xml" />
     <Content Include="Scripts\jqgrid\src\css\ui.jqgrid.css" />
     <Content Include="Scripts\jqgrid\src\css\ui.multiselect.css" />
     <Content Include="Scripts\jqgrid\src\grid.base.js" />
     <Content Include="Scripts\jqgrid\src\grid.celledit.js" />
     <Content Include="Scripts\jqgrid\src\grid.common.js" />
+    <Content Include="Scripts\jqgrid\src\grid.custom.js" />
     <Content Include="Scripts\jqgrid\src\grid.filter.js" />
     <Content Include="Scripts\jqgrid\src\grid.formedit.js" />
     <Content Include="Scripts\jqgrid\src\grid.grouping.js" />
     <Content Include="Scripts\jqgrid\src\grid.import.js" />
     <Content Include="Scripts\jqgrid\src\grid.inlinedit.js" />
     <Content Include="Scripts\jqgrid\src\grid.jqueryui.js" />
-    <Content Include="Scripts\jqgrid\src\grid.pivot.js" />
+    <Content Include="Scripts\jqgrid\src\grid.loader.js" />
     <Content Include="Scripts\jqgrid\src\grid.subgrid.js" />
+    <Content Include="Scripts\jqgrid\src\grid.tbltogrid.js" />
     <Content Include="Scripts\jqgrid\src\grid.treegrid.js" />
-    <Content Include="Scripts\jqgrid\src\grid.utils.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-ar.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-bg.js" />
-    <Content Include="Scripts\jqgrid\src\i18n\grid.locale-ca.js" />
+    <Content Include="Scripts\jqgrid\src\i18n\grid.locale-bg1251.js" />
+    <Content Include="Scripts\jqgrid\src\i18n\grid.locale-cat.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-cn.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-cs.js" />
+    <Content Include="Scripts\jqgrid\src\i18n\grid.locale-da.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-de.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-dk.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-el.js" />
@@ -902,6 +927,7 @@
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-gl.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-he.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-hr.js" />
+    <Content Include="Scripts\jqgrid\src\i18n\grid.locale-hr1250.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-hu.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-id.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-is.js" />
@@ -909,7 +935,7 @@
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-ja.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-kr.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-lt.js" />
-    <Content Include="Scripts\jqgrid\src\i18n\grid.locale-me.js" />
+    <Content Include="Scripts\jqgrid\src\i18n\grid.locale-mne.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-nl.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-no.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-pl.js" />
@@ -925,13 +951,16 @@
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-tr.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-tw.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-ua.js" />
-    <Content Include="Scripts\jqgrid\src\i18n\grid.locale-uk.js" />
     <Content Include="Scripts\jqgrid\src\i18n\grid.locale-vi.js" />
     <Content Include="Scripts\jqgrid\src\jqDnR.js" />
     <Content Include="Scripts\jqgrid\src\jqModal.js" />
     <Content Include="Scripts\jqgrid\src\jquery.fmatter.js" />
-    <Content Include="Scripts\jqgrid\src\jquery.jqGrid.js" />
+    <Content Include="Scripts\jqgrid\src\JsonXml.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\tagcloud.js" />
     <Content Include="Scripts\tiny_mce\langs\en.js" />
     <Content Include="Scripts\tiny_mce\license.txt" />
     <Content Include="Scripts\tiny_mce\plugins\advhr\css\advhr.css" />
@@ -1194,11 +1223,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionLinkExtensions.cs" />
+    <Compile Include="App_Start\BundleConfig .cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="CustomDateTimeConverter.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="FeedResult .cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1206,6 +1237,9 @@
     <Compile Include="Models\ListViewModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\WidgetViewModel.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="PostModelBinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\AuthProvider.cs" />
@@ -1232,10 +1266,8 @@
     <Content Include="Views\Shared\_LatestPosts.cshtml" />
     <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Views\Admin\Manage.cshtml" />
-    <Content Include="bin\HotNews.dll.config" />
-    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
-    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
-    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="Views\Shared\_Disqus.cshtml" />
+    <Content Include="Views\Shared\_AddThis.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,55 +1,23 @@
+;(function ($) {
 /**
  * jqGrid Persian Translation
  * Dual licensed under the MIT and GPL licenses:
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html
 **/
-/*global jQuery, define */
-(function( factory ) {
-	"use strict";
-	if ( typeof define === "function" && define.amd ) {
-		// AMD. Register as an anonymous module.
-		define([
-			"jquery",
-			"../grid.base"
-		], factory );
-	} else {
-		// Browser globals
-		factory( jQuery );
-	}
-}(function( $ ) {
-
-$.jgrid = $.jgrid || {};
-if(!$.jgrid.hasOwnProperty("regional")) {
-	$.jgrid.regional = [];
-}
-$.jgrid.regional["fa"] = {
+	$.jgrid = $.jgrid || {};
+	$.extend($.jgrid,{
         defaults: {
             recordtext: "نمابش {0} - {1} از {2}",
             emptyrecords: "رکوردی یافت نشد",
             loadtext: "بارگزاري...",
-			savetext: "Saving...",
-			pgtext: "صفحه {0} از {1}",
-			pgfirst : "First Page",
-			pglast : "Last Page",
-			pgnext : "Next Page",
-			pgprev : "Previous Page",
-			pgrecs : "Records per Page",
-			showhide: "Toggle Expand Collapse Grid",
-		// mobile
-		pagerCaption : "Grid::Page Settings",
-		pageText : "Page:",
-		recordPage : "Records per Page",
-		nomorerecs : "No more records...",
-		scrollPullup: "Pull up to load more...",
-		scrollPulldown : "Pull down to refresh...",
-		scrollRefresh : "Release to refresh..."
+            pgtext: "صفحه {0} از {1}"
         },
         search: {
             caption: "جستجو...",
             Find: "يافته ها",
             Reset: "از نو",
-            odata: [{ oper:'eq', text:"برابر"},{ oper:'ne', text:"نا برابر"},{ oper:'lt', text:"به"},{ oper:'le', text:"کوچکتر"},{ oper:'gt', text:"از"},{ oper:'ge', text:"بزرگتر"},{ oper:'bw', text:"شروع با"},{ oper:'bn', text:"شروع نشود با"},{ oper:'in', text:"نباشد"},{ oper:'ni', text:"عضو این نباشد"},{ oper:'ew', text:"اتمام با"},{ oper:'en', text:"تمام نشود با"},{ oper:'cn', text:"حاوی"},{ oper:'nc', text:"نباشد حاوی"},{ oper:'nu', text:'is null'},{ oper:'nn', text:'is not null'}],
+            odata: ['برابر', 'نا برابر', 'به', 'کوچکتر', 'از', 'بزرگتر', 'شروع با', 'شروع نشود با', 'نباشد', 'عضو این نباشد', 'اتمام با', 'تمام نشود با', 'حاوی', 'نباشد حاوی'],
             groupOps: [{
                 op: "AND",
                 text: "کل"
@@ -58,8 +26,8 @@ $.jgrid.regional["fa"] = {
                 op: "OR",
                 text: "مجموع"
             }],
-			operandTitle : "Click to select search operation.",
-			resetTitle : "Reset Search Value"
+            matchText: " حاوی",
+            rulesText: " اطلاعات"
         },
         edit: {
             addCaption: "اضافه کردن رکورد",
@@ -110,12 +78,7 @@ $.jgrid.regional["fa"] = {
             alertcap: "اخطار",
             alerttext: "لطفا يک رديف انتخاب کنيد",
             viewtext: "",
-            viewtitle: "نمایش رکورد های انتخاب شده",
-			savetext: "",
-			savetitle: "Save row",
-			canceltext: "",
-			canceltitle : "Cancel row editing",
-			selectcaption : "Actions..."
+            viewtitle: "نمایش رکورد های انتخاب شده"
         },
         col: {
             caption: "نمايش/عدم نمايش ستون",
@@ -156,7 +119,6 @@ $.jgrid.regional["fa"] = {
                 },
                 srcformat: "Y-m-d",
                 newformat: "d/m/Y",
-				parseRe : /[#%\\\/:_;.,\t\s-]/,
                 masks: {
                     ISO8601Long: "Y-m-d H:i:s",
                     ISO8601Short: "Y-m-d",
@@ -170,8 +132,7 @@ $.jgrid.regional["fa"] = {
                     UniversalSortableDateTime: "Y-m-d H:i:sO",
                     YearMonth: "F, Y"
                 },
-                reformatAfterEdit: false,
-				userLocalTime : false
+                reformatAfterEdit: false
             },
             baseLinkUrl: "",
             showAction: "نمايش",
@@ -181,5 +142,5 @@ $.jgrid.regional["fa"] = {
             },
             idName: "id"
         }
-    };
-}));
+    });
+})(jQuery);

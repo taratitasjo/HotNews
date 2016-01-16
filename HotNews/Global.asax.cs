@@ -4,6 +4,7 @@ using Ninject.Web.Common;
 using System.Web.Routing;
 using HotNews.Providers;
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
 using HotNews.Core.Objects;
 
@@ -25,6 +26,7 @@ namespace HotNews
 
         protected override void OnApplicationStarted()
         {
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             ModelBinders.Binders.Add(typeof(Post), new PostModelBinder(Kernel));
             base.OnApplicationStarted();
