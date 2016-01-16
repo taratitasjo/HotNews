@@ -384,5 +384,79 @@ namespace HotNews.Core
             return _session.Query<Tag>().FirstOrDefault(t => t.Id == id);
         }
 
+        public void EditPost(Post post)
+        {
+            using (var tran = _session.BeginTransaction())
+            {
+                _session.SaveOrUpdate(post);
+                tran.Commit();
+            }
+        }
+        public void DeletePost(int id)
+        {
+            using (var tran = _session.BeginTransaction())
+            {
+                var post = _session.Get<Post>(id);
+                _session.Delete(post);
+                tran.Commit();
+            }
+        }
+        public int AddCategory(Category category)
+        {
+            using (var tran = _session.BeginTransaction())
+            {
+                _session.Save(category);
+                tran.Commit();
+                return category.Id;
+            }
+        }
+
+        public void EditCategory(Category category)
+        {
+            using (var tran = _session.BeginTransaction())
+            {
+                _session.SaveOrUpdate(category);
+                tran.Commit();
+            }
+        }
+
+        public void DeleteCategory(int id)
+        {
+            using (var tran = _session.BeginTransaction())
+            {
+                var category = _session.Get<Category>(id);
+                _session.Delete(category);
+                tran.Commit();
+            }
+        }
+
+        public int AddTag(Tag tag)
+        {
+            using (var tran = _session.BeginTransaction())
+            {
+                _session.Save(tag);
+                tran.Commit();
+                return tag.Id;
+            }
+        }
+        public void EditTag(Tag tag)
+        {
+            using (var tran = _session.BeginTransaction())
+            {
+                _session.SaveOrUpdate(tag);
+                tran.Commit();
+            }
+        }
+
+        public void DeleteTag(int id)
+        {
+            using (var tran = _session.BeginTransaction())
+            {
+                var tag = _session.Get<Tag>(id);
+                _session.Delete(tag);
+                tran.Commit();
+            }
+        }
+
     }
 }
