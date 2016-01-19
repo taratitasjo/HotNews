@@ -50,6 +50,10 @@
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FluentNHibernate, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
@@ -157,6 +161,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Readme\Elmah.txt" />
     <Content Include="bin\Antlr3.Runtime.dll" />
     <Content Include="bin\FluentNHibernate.dll" />
     <Content Include="bin\HotNews.Core.dll" />
@@ -1227,6 +1232,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="CustomDateTimeConverter.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="FeedResult .cs" />
@@ -1268,6 +1274,11 @@
     <Content Include="Views\Admin\Manage.cshtml" />
     <Content Include="Views\Shared\_Disqus.cshtml" />
     <Content Include="Views\Shared\_AddThis.cshtml" />
+    <Content Include="Views\Error\Index.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Blog\Contact.cshtml" />
+    <Content Include="Views\Blog\Thanks.cshtml" />
+    <Content Include="Views\Blog\Aboutme.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

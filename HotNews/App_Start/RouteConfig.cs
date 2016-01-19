@@ -16,6 +16,13 @@ namespace HotNews
                       );
 
             routes.MapRoute(
+                        "Archive",
+                         "Archive/{year}/{month}",
+                    new { controller = "Blog", action = "Archive", year = UrlParameter.Optional, month = UrlParameter.Optional }
+                         );
+
+
+            routes.MapRoute(
                      "Category",
                      "Category/{category}",
                     new { controller = "Blog", action = "Category" }

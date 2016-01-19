@@ -43,17 +43,17 @@
             <div id="logo">
                 <div id="logo_text">
                     <h1><a href="/">Hot<span class="logo_colour">News</span></a></h1>
-                    <h2>Book Reviews, News and more....</h2>
+                    <h2>Κριτικές Βιβλίων, Ταινίες , Καυτά Νέα..</h2>
                 </div>
             </div>
 
             <!-- Navigation -->
             <div id="menubar">
                 <ul id="menu">
-                    @*<a href="/Blog/Posts">Posts</a>*@
-                    <li class="@(action == "posts" ? "selected" : "")">@Html.ActionLink("Posts", "Posts")</li>
-                    <li class="@(action == "contact" ? "selected" : "")">@Html.ActionLink("Contact", "Contact")</li>
-                    <li class="@(action == "aboutme" ? "selected" : "")">@Html.ActionLink("About Me", "Aboutme")</li>>
+                    
+                    <li class="@(action == "posts" ? "selected" : "")">@Html.ActionLink("Άρθρα", "Posts")</li>
+                    <li class="@(action == "contact" ? "selected" : "")">@Html.ActionLink("Επικοινωνία", "Contact")</li>
+                    <li class="@(action == "aboutme" ? "selected" : "")">@Html.ActionLink("Σχετικά με", "Aboutme")</li>
                 </ul>
             </div>
         </div>

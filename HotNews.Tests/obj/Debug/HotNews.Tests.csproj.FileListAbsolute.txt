@@ -50,13 +50,6 @@ C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Te
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.WebPages.xml
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\NHibernate.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Ninject.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\FluentNHibernate.pdb
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\FluentNHibernate.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Ninject.Web.Common.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Iesi.Collections.xml
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\obj\Debug\HotNews.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\obj\Debug\HotNews.Tests.dll
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\obj\Debug\HotNews.Tests.pdb

@@ -24,6 +24,8 @@ namespace HotNews.Core
         int TotalPostsForSearch(string search);
 
         Post Post(int year, int month, string titleSlug);
+        Post Post(int id);
+
         IList<Category> Categories();
 
         IList<Tag> Tags();
@@ -51,5 +53,8 @@ namespace HotNews.Core
         void EditTag(Tag tag);
 
         void DeleteTag(int id);
+
+        int TotalCategories();
+
     }
 }

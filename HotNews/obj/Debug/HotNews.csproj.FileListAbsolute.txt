@@ -13,6 +13,7 @@ C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews\bi
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews\bin\HotNews.dll.config
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews\bin\HotNews.dll
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews\bin\HotNews.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews\bin\Elmah.dll
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews\bin\HotNews.Core.dll
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews\bin\HotNews.Core.pdb
 C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews\obj\Debug\HotNews.csprojResolveAssemblyReference.cache

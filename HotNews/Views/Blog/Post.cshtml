@@ -2,6 +2,8 @@
 
 @{
     ViewBag.Title = Model.Title;
+    ViewBag.Keywords = string.Join(" ", Model.Tags.Select(t => t.Name).ToArray());
+    ViewBag.Description = Model.Meta;
 }
 
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Linq;
+using System.Net.Mail;
 using System.ServiceModel.Syndication;
 using System.Web;
 using HotNews.Core;
@@ -117,5 +118,53 @@ namespace HotNews.Controllers
         }
 
 
+        //Edw kanoume dokimi gia sfalamata arkei ston browser na grapseis badaction kai meta
+        //boreis na deis to la8os sto elmah.axd
+        //public ActionResult BadAction()
+        //{
+        //    throw new Exception("You forgot to implement this action!");
+        //}
+        public ViewResult Contact()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ViewResult Contact(Contact contact)
+        {
+            if (ModelState.IsValid)
+            {
+                using (var client = new SmtpClient())
+                {
+                    var adminEmail = ConfigurationManager.AppSettings["AdminEmail"];
+                    var from = new MailAddress(adminEmail, "JustBlog Messenger");
+                    var to = new MailAddress(adminEmail, "JustBlog Admin");
+
+                    using (var message = new MailMessage(from, to))
+                    {
+                        message.Body = contact.Body;
+                        message.IsBodyHtml = true;
+                        message.BodyEncoding = Encoding.UTF8;
+
+                        message.Subject = contact.Subject;
+                        message.SubjectEncoding = Encoding.UTF8;
+
+                        message.ReplyTo = new MailAddress(contact.Email);
+
+                        client.Send(message);
+                    }
+                }
+
+                return View("Thanks");
+            }
+
+            return View();
+        }
+
+        public ViewResult Aboutme()
+        {
+            return View();
+        }
     }
 }

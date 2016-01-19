@@ -146,14 +146,29 @@ namespace HotNews.Core
             return query.ToFuture().Single();
         }
 
+        public Post Post(int id)
+        {
+            return _session.Get<Post>(id);
+        }
+
         public IList<Category> Categories()
         {
             return _session.Query<Category>().OrderBy(p => p.Name).ToList();
         }
 
+        public int TotalCategories()
+        {
+            return _session.Query<Category>().Count();
+        }
+
         public IList<Tag> Tags()
         {
             return _session.Query<Tag>().OrderBy(p => p.Name).ToList();
+        }
+
+        public int TotalTags()
+        {
+            return _session.Query<Tag>().Count();
         }
 
         public IList<Post> Posts(int pageNo, int pageSize, string sortColumn,
