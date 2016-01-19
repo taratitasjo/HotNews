@@ -163,6 +163,7 @@
   <ItemGroup>
     <Content Include="App_Readme\Elmah.txt" />
     <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Elmah.dll" />
     <Content Include="bin\FluentNHibernate.dll" />
     <Content Include="bin\HotNews.Core.dll" />
     <Content Include="bin\HotNews.Core.pdb" />
