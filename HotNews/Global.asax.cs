@@ -7,7 +7,7 @@ using System.Web.Routing;
 using HotNews.Providers;
 using System.Web.Mvc;
 using System.Web.Optimization;
-using System.Web.Routing;
+
 using HotNews.Controllers;
 using HotNews.Core.Objects;
 
@@ -30,10 +30,13 @@ namespace HotNews
 
         protected override void OnApplicationStarted()
         {
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
+
             ModelBinders.Binders.Add(typeof(Post), new PostModelBinder(Kernel));
-          
+
+            //HibernatingRhinos.Profiler.Appender.NHibernate.NHibernateProfiler.Initialize();
+
             base.OnApplicationStarted();
         }
 
@@ -84,15 +87,11 @@ namespace HotNews
                 httpContext.Response.TrySkipIisCustomErrors = true;
 
                 routeData.Values["controller"] = "Error";
-                //routeData.Values["action"] = "Index";
-
-                routeData.Values["action"] = status == 404 ? "NotFound" : "Index";
+                routeData.Values["action"] = "Index";
 
                 controller.ViewData.Model = new HandleErrorInfo(ex, currentController, currentAction);
                 ((IController)controller).Execute(new RequestContext(new HttpContextWrapper(httpContext), routeData));
             }
         }
-
-
     }
 }

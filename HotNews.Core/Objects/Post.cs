@@ -48,5 +48,8 @@ namespace HotNews.Core.Objects
 
         public virtual IList<Tag> Tags
         { get; set; }
+
+
+
     }
 }

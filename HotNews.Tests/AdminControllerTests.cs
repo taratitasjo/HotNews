@@ -14,6 +14,7 @@ using HotNews.Providers;
 using HotNews.Core;
 using  HotNews;
 
+
 namespace HotNews.Tests
 {
 

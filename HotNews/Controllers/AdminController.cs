@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Security;
-using HotNews.Core;
+﻿using HotNews.Core;
 using HotNews.Core.Objects;
 using HotNews.Models;
 using HotNews.Providers;
 using Newtonsoft.Json;
-
+using System;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Web;
+using System.Web.Mvc;
 
 namespace HotNews.Controllers
 {
@@ -20,7 +18,7 @@ namespace HotNews.Controllers
         private readonly IAuthProvider _authProvider;
         private readonly IBlogRepository _blogRepository;
 
-        public AdminController(IAuthProvider authProvider, IBlogRepository blogRepository=null)
+        public AdminController(IAuthProvider authProvider, IBlogRepository blogRepository = null)
         {
             _authProvider = authProvider;
             _blogRepository = blogRepository;
@@ -72,8 +70,6 @@ namespace HotNews.Controllers
                 return RedirectToAction("Manage");
             }
         }
-
-       
 
         public ContentResult Posts(JqInViewModel jqParams)
         {
@@ -213,7 +209,6 @@ namespace HotNews.Controllers
                 total = 1
             }), "application/json");
         }
-
 
         [HttpPost]
         public ContentResult AddCategory([Bind(Exclude = "Id")]Category category)
@@ -370,5 +365,24 @@ namespace HotNews.Controllers
             return Content(json, "application/json");
         }
 
+        public ActionResult GoToPost(int id)
+        {
+            var post = _blogRepository.Post(id);
+            return RedirectToRoute(new { controller = "Blog", action = "Post", year = post.PostedOn.Year, month = post.PostedOn.Month, title = post.UrlSlug });
+        }
+
+        [HttpPost]
+        public JsonResult UploadImage(HttpPostedFileBase Image)
+        {
+            string directory = @"C:\gaming\uploads\";
+
+            if (Image != null && Image.ContentLength > 0)
+            {
+                var fileName = Path.GetFileName(Image.FileName);
+                Image.SaveAs(Path.Combine(directory, fileName));
+            }
+
+            return Json(new { isUploaded = true, message = "Uploaded Successfully" }, "text/html");
+        }
     }
 }
