@@ -65,7 +65,29 @@ namespace HotNews
                     new { controller = "Blog", action = "Posts" }
                     );
 
-            
+         //   routes.MapRoute(
+         //     "Upload",// Route name
+         //      "Admin/{action}/{id}", // URL with parameters
+         //    new { controller = "Admin", action = "Upload", id = UrlParameter.Optional } // Parameter defaults
+         //);
+
+            routes.MapRoute(
+              "Upload",// Route name
+               "Upload/{action}/{id}", // URL with parameters
+             new { controller = "Upload", action = "Upload", id = UrlParameter.Optional } // Parameter defaults
+         );
+
+            //     routes.MapRoute(
+            //    "Default", // Route name
+            //    "{controller}/{action}/{id}", // URL with parameters
+            //    new { controller = "Admin", action = "Upload", id = UrlParameter.Optional } // Parameter defaults
+            //);
+
+            //routes.MapRoute(
+            //           "UploadImage",
+            //            "Admin/UploadImage",
+            //        new { controller = "Admin", action = "UploadImage" }
+            //           );
 
             //routes.MapRoute(
             //     "Default",

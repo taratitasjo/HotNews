@@ -58,12 +58,24 @@ namespace HotNews
             bundles.Add(jqueryUICssBundle);
 
             // tinyMCE library bundle
-            var tinyMceBundle = new ScriptBundle("~/Scripts/tiny_mce/js").Include("~/Scripts/tiny_mce/tiny_mce.js");
+            //var tinyMceBundle = new ScriptBundle("~/Scripts/tiny_mce/js").Include("~/Scripts/tiny_mce/tiny_mce.js");
+            //bundles.Add(tinyMceBundle);
+
+            var tinyMceBundle = new ScriptBundle("~/Scripts/tiny_mce/js").Include("~/Scripts/tinymce/tinymce.min.js");
             bundles.Add(tinyMceBundle);
 
             // Other scripts
-            var manageJsBundle = new ScriptBundle("~/manage/js").Include("~/Scripts/jqgrid/js/jquery.jqGrid.js").Include("~/Scripts/jqgrid/js/i18n/grid.locale-en.js").Include("~/Scripts/admin.js");
+            //var manageJsBundle = new ScriptBundle("~/manage/js").Include("~/Scripts/jqgrid/js/jquery.jqGrid.js").Include("~/Scripts/jqgrid/js/i18n/grid.locale-en.js").Include("~/Scripts/admin.js").Include("~/Content/themes/simple/ajaxfileupload.js"); 
+            //bundles.Add(manageJsBundle);
+            // Other scripts
+            var manageJsBundle = new ScriptBundle("~/manage/js").Include("~/Scripts/jqgrid/js/jquery.jqGrid.js").Include("~/Scripts/jqgrid/js/i18n/grid.locale-en.js").Include("~/Scripts/admin.js") ;
             bundles.Add(manageJsBundle);
+
+            //// CSS bundle for ajaxfileupload
+
+            //var ajaxfileuploadCssBundle = new StyleBundle("~/Content/themes/simple/bundle").Include("~/Content/themes/simple/ajaxfileupload.css");
+            //bundles.Add(ajaxfileuploadCssBundle);
+
 
 
             // TODO: bundles for other pages

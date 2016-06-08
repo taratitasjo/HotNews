@@ -1,5 +1,6 @@
 ﻿using HotNews.Core.Objects;
 using System.Collections.Generic;
+using System.Web;
 
 namespace HotNews.Core
 {
@@ -55,6 +56,7 @@ namespace HotNews.Core
         void DeleteTag(int id);
 
         int TotalCategories();
+        //int UploadImage(Image image);
 
     }
 }

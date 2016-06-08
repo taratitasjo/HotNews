@@ -37,12 +37,19 @@ namespace HotNews.Core.Mappings
 
             Map(x => x.Modified);
 
+            Map(x => x.Image)
+               .Length(1000);
+
             References(x => x.Category)
                 .Column("Category")
                 .Not.Nullable();
 
             HasManyToMany(x => x.Tags)
                 .Table("PostTagMap");
+
+            //References(x => x.Image)
+            //    .Column("Image")
+            //    .Not.Nullable();
         }
     }
 }

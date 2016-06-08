@@ -1,62 +1,165 @@
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\csc.exe
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\vbc.exe
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\VBCSCompiler.exe
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\HotNews.Tests.dll.config
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\HotNews.Tests.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\HotNews.Tests.pdb
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\HotNews.Core.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\HotNews.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Microsoft.Owin.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\nunit.core.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\nunit.core.interfaces.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\nunit.framework.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\nunit.util.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\NUnit.VisualStudio.TestAdapter.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Owin.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Rhino.Mocks.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Spextensions.RhinoMocks.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.Helpers.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.Mvc.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.Razor.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.WebPages.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.WebPages.Razor.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\NHibernate.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Ninject.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\FluentNHibernate.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Ninject.Web.Common.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.Optimization.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Iesi.Collections.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\HotNews.Core.pdb
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\HotNews.pdb
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Microsoft.Owin.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\nunit.framework.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.Helpers.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.Mvc.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.Razor.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.WebPages.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\NHibernate.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Ninject.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\FluentNHibernate.pdb
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\FluentNHibernate.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Ninject.Web.Common.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\bin\Debug\Iesi.Collections.xml
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\obj\Debug\HotNews.Tests.csprojResolveAssemblyReference.cache
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\obj\Debug\HotNews.Tests.dll
-C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews\HotNews.Tests\obj\Debug\HotNews.Tests.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\csc.exe
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\vbc.exe
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\HotNews.Tests.dll.config
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\HotNews.Tests.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\HotNews.Tests.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\HotNews.Core.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\HotNews.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\nunit.core.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\nunit.core.interfaces.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\nunit.util.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\NUnit.VisualStudio.TestAdapter.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Owin.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Rhino.Mocks.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Spextensions.RhinoMocks.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\NHibernate.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Ninject.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\FluentNHibernate.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Iesi.Collections.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\HotNews.Core.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\HotNews.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\obj\Debug\HotNews.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\obj\Debug\HotNews.Tests.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 a\HotNews.Tests\obj\Debug\HotNews.Tests.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\csc.exe
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\vbc.exe
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\HotNews.Tests.dll.config
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\HotNews.Tests.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\HotNews.Tests.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\HotNews.Core.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\HotNews.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\nunit.core.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\nunit.core.interfaces.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\nunit.util.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\NUnit.VisualStudio.TestAdapter.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Owin.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Rhino.Mocks.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Spextensions.RhinoMocks.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\NHibernate.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Ninject.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\FluentNHibernate.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Iesi.Collections.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\HotNews.Core.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\HotNews.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\obj\Debug\HotNews.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\obj\Debug\HotNews.Tests.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 b\HotNews.Tests\obj\Debug\HotNews.Tests.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\csc.exe
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\vbc.exe
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\HotNews.Tests.dll.config
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\HotNews.Tests.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\HotNews.Tests.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\HotNews.Core.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\HotNews.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\nunit.core.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\nunit.core.interfaces.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\nunit.util.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\NUnit.VisualStudio.TestAdapter.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Owin.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Rhino.Mocks.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Spextensions.RhinoMocks.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\NHibernate.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Ninject.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\FluentNHibernate.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Iesi.Collections.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\HotNews.Core.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\HotNews.pdb
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\obj\Debug\HotNews.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\obj\Debug\HotNews.Tests.dll
+C:\Users\Ιωάννης\Documents\Visual Studio 2015\Projects\HotNews6 c\HotNews.Tests\obj\Debug\HotNews.Tests.pdb

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
+using System.Web;
 using HotNews.Core.Objects;
 using NHibernate;
 using NHibernate.Criterion;
@@ -472,6 +473,20 @@ namespace HotNews.Core
                 tran.Commit();
             }
         }
+
+        //public int UploadImage(Image image)
+        //{
+        //    using (var tran = _session.BeginTransaction())
+        //    {
+        //        _session.Save(image);
+        //        tran.Commit();
+        //        return image.Id;
+        //    }
+
+
+
+        //}
+
 
     }
 }

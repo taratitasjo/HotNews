@@ -30,6 +30,11 @@ namespace HotNews
 
         protected override void OnApplicationStarted()
         {
+            //added after image
+          AreaRegistration.RegisterAllAreas();
+            
+            //added after image
+
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 

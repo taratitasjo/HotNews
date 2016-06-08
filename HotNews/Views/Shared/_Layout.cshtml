@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width" />
     @*afto to pernei apo toBlogController sto ViewBag.Title*@
     <title>@ViewBag.Title</title>
+
     <meta name="keywords" content="@(ViewBag.Keywords ?? ConfigurationManager.AppSettings["MetaKeywords"])" />
     <meta name="description" content="@(ViewBag.Description ?? ConfigurationManager.AppSettings["MetaDescription"])" />
     <meta name="author" content="@ConfigurationManager.AppSettings["Author"]" />
@@ -33,6 +34,20 @@
 
     @Styles.Render("~/Content/themes/simple/css")
     @Scripts.Render("~/jquery", "~/jqueryval", "~/jqueryunobtrusiveval", "~/js")
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!---About the bootstrap advance-->
+    <!-- Bootstrap CSS file -->
+    @*<link rel="stylesheet" type="text/css" href="~/Content/themes/simple/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" type="text/css" href="~/Content/themes/simple/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  
+     Jquery and Bootstrap Script files 
+    <script src="~/Content/themes/simple/jquery-2.2.0.min.js"></script>
+    <script src="~/Content/themes/simple/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>*@
+
 
 </head>
 <body>

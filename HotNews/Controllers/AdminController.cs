@@ -4,11 +4,14 @@ using HotNews.Models;
 using HotNews.Providers;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
+using HotNews.ViewModels;
 
 namespace HotNews.Controllers
 {
@@ -49,6 +52,14 @@ namespace HotNews.Controllers
 
         public ActionResult Manage()
         {
+            //var url = HttpRuntime.AppDomainAppVirtualPath;
+            //var url =  ConfigurationManager.AppSettings["BlogUrl"];
+            //return View(new UploadViewModel
+            //{
+            //     baseUrl = url,
+               
+            //});
+
             return View();
         }
 
@@ -371,18 +382,88 @@ namespace HotNews.Controllers
             return RedirectToRoute(new { controller = "Blog", action = "Post", year = post.PostedOn.Year, month = post.PostedOn.Month, title = post.UrlSlug });
         }
 
-        [HttpPost]
-        public JsonResult UploadImage(HttpPostedFileBase Image)
-        {
-            string directory = @"C:\gaming\uploads\";
+        //[HttpPost]
+        //public JsonResult UploadImage(HttpPostedFileBase Image)
+        //{
+        //    //string directory = @"C:\gaming\uploads\";
 
-            if (Image != null && Image.ContentLength > 0)
-            {
-                var fileName = Path.GetFileName(Image.FileName);
-                Image.SaveAs(Path.Combine(directory, fileName));
-            }
+        //    //if (Image != null && Image.ContentLength > 0)
+        //    //{
+        //    //    var fileName = Path.GetFileName(Image.FileName);
+        //    //    Image.SaveAs(Path.Combine(directory, fileName));
+        //    //}
 
-            return Json(new { isUploaded = true, message = "Uploaded Successfully" }, "text/html");
-        }
+        //    if (Image != null && Image.ContentLength > 0)
+        //    {
+        //        var fileName = Path.GetFileName(Image.FileName);
+        //        var path = Path.Combine(Server.MapPath("Uploads"), fileName);
+        //        Image.SaveAs(path);
+
+
+
+        //    }
+
+        //    return Json(new { isUploaded = true, message = "Uploaded Successfully" }, "text/html");
+        //}
+
+        //public ActionResult Upload(string id)
+        //{
+        //  //  var url = HttpRuntime.AppDomainAppVirtualPath;
+        //    return View(new UploadViewModel
+        //    {
+        //       // baseUrl = url,
+        //        track = id
+        //    });
+        //}
+
+        //[HttpPost]
+        //public ActionResult UploadFile()
+        //{
+        //    var file = Request.Files[0];
+        //    if (file != null && file.ContentLength > 0)
+        //    {
+        //        var fileName = Path.GetFileName(file.FileName);
+        //        var path = Path.Combine(Server.MapPath("~/App_Files/Upload"), fileName);
+        //        file.SaveAs(path);
+        //    }
+
+        //    return RedirectToAction("Manage");
+        //}
+
+        //public ActionResult ListFiles()
+        //{
+        //    var fileData = new List<ViewDataUploadFileResults>();
+
+        //    DirectoryInfo dir = new DirectoryInfo(Server.MapPath("~/App_Files/Upload"));
+        //    if (dir.Exists)
+        //    {
+        //        string[] extensions = MimeTypes.ImageMimeTypes.Keys.ToArray();
+
+        //        FileInfo[] files = dir.EnumerateFiles()
+        //                              .Where(f => extensions.Contains(f.Extension.ToLower()))
+        //                              .ToArray();
+
+        //        if (files.Length > 0)
+        //        {
+        //            foreach (FileInfo file in files)
+        //            {
+        //                var relativePath = VirtualPathUtility.ToAbsolute("~/App_Files/Upload") + "/" + file.Name;
+
+        //                fileData.Add(new ViewDataUploadFileResults()
+        //                {
+        //                    url = relativePath,
+        //                    name = file.Name,
+        //                    type = MimeTypes.ImageMimeTypes[file.Extension],
+        //                    size = Convert.ToInt32(file.Length)
+        //                });
+        //            }
+        //        }
+        //    }
+
+        //    return Json(fileData, JsonRequestBehavior.AllowGet);
+        //}
+
+
+
     }
 }

@@ -43,11 +43,17 @@ namespace HotNews.Core.Objects
         public virtual DateTime? Modified
         { get; set; }
 
+        public virtual string Image
+        { get; set; }
+
         public virtual Category Category
         { get; set; }
 
         public virtual IList<Tag> Tags
         { get; set; }
+
+        //public virtual Image Image
+        //{ get; set; }
 
 
 

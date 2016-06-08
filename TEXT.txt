@@ -1,0 +1,7 @@
+TINYMCE4 AND tinymce4filemanagermvc4
+admin controller working
+problem
+1.cannot upload other file after one needs refrech
+solution:make page to make refrech
+2.cannot show file because sends him at app/file/nameofimage and not to localhost/category/app/file/nameofimage
+3.ασφάλεισε το upload index για να μη μπορεί να μπαίνει κάποιος όπως και στο localhost/manage

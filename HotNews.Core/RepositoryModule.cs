@@ -23,7 +23,7 @@ namespace HotNews.Core
                             c.FromConnectionStringWithKey("JustBlogDbConnString")))
                         .Cache(c => c.UseQueryCache().ProviderClass<HashtableCacheProvider>())
                         .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Post>())
-                        //.ExposeConfiguration(cfg => new SchemaExport(cfg).Execute(true, true, false))
+                       //.ExposeConfiguration(cfg => new SchemaExport(cfg).Execute(true, true, false))
                      
                         .BuildConfiguration()
                         .BuildSessionFactory()

@@ -1,12 +1,10 @@
 ﻿$(function () {
-
     var JustBlog = {};
 
     JustBlog.GridManager = {};
 
     //************************* POSTS GRID
     JustBlog.GridManager.postsGrid = function (gridName, pagerName) {
-
         //*** Event handlers
         var afterclickPgButtons = function (whichbutton, formid, rowid) {
             tinyMCE.get("ShortDescription").setContent(formid[0]["ShortDescription"].value);
@@ -14,13 +12,73 @@
         };
 
         var afterShowForm = function (form) {
-            tinyMCE.execCommand('mceAddControl', false, "ShortDescription");
-            tinyMCE.execCommand('mceAddControl', false, "Description");
+
+            tinymce.init({
+                 language:"el",
+                selector: "textarea",
+                theme: "modern",
+                height: 300,
+                plugins: [
+                    "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+                    "searchreplace wordcount visualblocks visualchars code fullscreen",
+                    "insertdatetime media nonbreaking save table contextmenu directionality",
+                    "emoticons template paste textcolor"
+                ],
+                toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media | forecolor backcolor emoticons",
+               // connector: '@Model.baseUrl' + 'Admin/Upload',
+                connector: "Upload/Index",
+
+
+                templates: [
+                    { title: 'Test template 1', content: 'Test 1' },
+                    { title: 'Test template 2', content: 'Test 2' }
+                ],
+            });
+
+
+
+
+
+            //tinymce.init({
+            //    language:"el",
+            //     selector: "textarea",
+            //    theme: "modern",
+            //    height: 300,
+            //    plugins: [
+            //        "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
+            //        "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+            //        "save table contextmenu directionality emoticons template paste textcolor"
+            //    ],
+            //    content_css: "css/metro-bootstrap.min.css",
+            //    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons",
+            //    file_browser_callback: function(field, url, type, win) {
+            //        tinyMCE.activeEditor.windowManager.open({
+            //            url: '/FileBrowser/FileBrowser.aspx?caller=tinymce4&langCode=en&type=' + type,
+            //            title: 'File Browser',
+            //            width: 700,
+            //            height: 500,
+            //            inline: true,
+            //            close_previous: false
+            //        }, {
+            //            window: win,
+            //            field: field
+            //        });
+            //        return false;
+            //    }
+
+            //});
+
+
+         // tinyMCE.execCommand('mceAddControl', false, "ShortDescription");
+        // tinyMCE.execCommand('mceAddControl', false, "Description");
         };
 
         var onClose = function (form) {
-            tinyMCE.execCommand('mceRemoveControl', false, "ShortDescription");
-            tinyMCE.execCommand('mceRemoveControl', false, "Description");
+            //tinymce4 is removed like this
+            tinymce.remove('textarea');
+           //tinyMCE.execCommand('mceRemoveControl', false, "ShortDescription");
+           //tinyMCE.execCommand('mceRemoveControl', false, "Description");
+            
         };
 
         var beforeSubmitHandler = function (postdata, form) {
@@ -45,8 +103,8 @@
                 'Url Slug',
                 'Published',
                 'Posted On',
-                'Modified',
-                 'Image'
+                'Modified'
+                 //'Image'
         ];
 
         var columns = [];
@@ -158,16 +216,31 @@
             }
         });
 
+        //columns.push({
+        //    name: 'Meta',
+        //    width: 250,
+        //    sortable: false,
+        //    editable: true,
+        //    edittype: 'textarea',
+        //    editoptions: {
+        //        rows: "2",
+        //        cols: "40",
+        //        maxlength: 1000
+        //    },
+        //    editrules: {
+        //        required: true
+        //    }
+        //});
+
         columns.push({
             name: 'Meta',
             width: 250,
             sortable: false,
             editable: true,
-            edittype: 'textarea',
+           
             editoptions: {
-                rows: "2",
-                cols: "40",
-                maxlength: 1000
+                 size: 43,
+                maxlength: 200
             },
             editrules: {
                 required: true
@@ -221,20 +294,21 @@
 
         ////////////////adding image
 
-        columns.push({
-            name: 'Image',
-            index: 'Image',
-            align: 'left',
-            editable: true,
-            edittype: 'file',
-            editoptions: {
-                enctype: "multipart/form-data"
-            },
-            width: 210,
-            align: 'center',
-            //formatter: jgImageFormatter,
-            search: false
-        });
+        //columns.push({
+        //    name: 'Image',
+        //    index: 'Image',
+        //    align: 'left',
+        //    editable: true,
+        //    edittype: 'file',
+        //    editoptions: {
+        //        enctype: "multipart/form-data"
+        //    },
+        //    width: 210,
+        //    align: 'center',
+        //    //formatter: jgImageFormatter,
+        //    //afterSubmit: UploadImage,
+        //    search: false
+        //});
 
         ////////////////adding image
 
@@ -281,7 +355,6 @@
                     if (tagStr) tagStr += ", "
                     tagStr += t.Name;
                 });
-
 
                 $(gridName).setRowData(rowid, { "Tags": tagStr });
             }
@@ -330,41 +403,38 @@
 
     //uploading image
 
+    //function ajaxFileUpload(id) {
+    //    $.ajaxFileUpload
+    // (
+    //     {
+    //         url: '/Admin/UploadImage',
+    //         secureuri: false,
+    //         fileElementId: 'Image',
+    //         dataType: 'json',
+    //         data: { id: id },
+    //         success: function (data, status) {
 
-    function ajaxFileUpload(id) {
-        $.ajaxFileUpload
-        (
-            {
-                url: '/Admin/UploadImage',
-                secureuri: false,
-                fileElementId: 'Image',
-                dataType: 'json',
-                data: { id: id },
-                success: function (data, status) {
+    //             if (typeof (data.isUploaded) != 'undefined') {
+    //                 if (data.isUploaded == true) {
+    //                     return;
+    //                 } else {
+    //                     alert(data.message);
+    //                 }
+    //             }
+    //             else {
+    //                 return alert('Failed to upload image!');
+    //             }
+    //         },
+    //         error: function (data, status, e) {
+    //             return alert('Failed to upload image!');
+    //         }
+    //     }
+    // )
 
-                    if (typeof (data.isUploaded) != 'undefined') {
-                        if (data.isUploaded == true) {
-                            return;
-                        } else {
-                            alert(data.message);
-                        }
-                    }
-                    else {
-                        return alert('Failed to upload image!');
-                    }
-                },
-                error: function (data, status, e) {
-                    return alert('Failed to upload image!');
-                }
-            }
-        )
-
-        return false;
-    }
+    //    return false;
+    //}
 
     /////////////////// apo edw mexri katw den yparxei
-
-
 
     //************************* CATEGORIES GRID
     JustBlog.GridManager.categoriesGrid = function (gridName, pagerName) {
@@ -645,29 +715,26 @@
     /////////////////// ews edw den yparxei
 
     JustBlog.GridManager.afterSubmitHandler = function (response, postdata) {
+        var json = $.parseJSON(response.responseText);
 
-        //var json = $.parseJSON(response.responseText);
+        if (json) return [json.success, json.message, json.id];
 
-        //if (json) return [json.success, json.message, json.id];
+        return [false, "Failed to get result from server.", null];
 
-        //return [false, "Failed to get result from server.", null];
+        //var data = $.parseJSON(response.responseText);
 
-        var data = $.parseJSON(response.responseText);
+        //if (data.success == true) {
+        //    if ($("#Image").val() != "") {
+        //        ajaxFileUpload(data.id);
+        //    }
+        //}
 
-        if (data.success == true) {
-            if ($("#Image").val() != "") {
-                ajaxFileUpload(data.id);
-            }
-        }
-
-        return [data.success, data.message, data.id];
+        //return [data.success, data.message, data.id];
     };
 
     $("#tabs").tabs({
         show: function (event, ui) {
-
             if (!ui.tab.isLoaded) {
-
                 var gdMgr = JustBlog.GridManager,
                         fn, gridName, pagerName;
 
@@ -695,31 +762,3 @@
         }
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
